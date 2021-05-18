@@ -32,6 +32,8 @@ https://github.com/proabiral/inception
 https://github.com/FortyNorthSecurity/EyeWitness
 14) Meg
 https://github.com/tomnomnom/meg
+15) Gau - Get All Urls
+https://github.com/lc/gau
 
 We respect the privacy of clients we are working on Hackerone.com & use only passive techniques, we do not share anything related to security misconfigurations, and everything is taken from passive resources, including the techniques performed. The purpose is for Educational only!
 
