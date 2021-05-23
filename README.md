@@ -39,6 +39,12 @@ https://github.com/hannob/snallygaster
 17) NMAP
 https://github.com/nmap/nmap
 
+Bounty Platform used:
+
+Hexway
+
+https://hexway.io/
+
 We respect the privacy of clients we are working on Hackerone.com & use only passive techniques, we do not share anything related to security misconfigurations, and everything is taken from passive resources, including the techniques performed. The purpose is for Educational only!
 
 We will update the list everytime we add/remove tools.
