@@ -43,7 +43,7 @@ Bounty Platform used:
 
 Hexway
 
-https://hexway.io/
+https://hexway.io/hive
 
 We respect the privacy of clients we are working on Hackerone.com & use only passive techniques, we do not share anything related to security misconfigurations, and everything is taken from passive resources, including the techniques performed. The purpose is for Educational only!
 
