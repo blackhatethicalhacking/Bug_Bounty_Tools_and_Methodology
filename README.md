@@ -40,6 +40,8 @@ https://github.com/hannob/snallygaster
 https://github.com/nmap/nmap
 18) Waybackurls
 https://github.com/tomnomnom/waybackurls
+19) Gotty
+https://github.com/yudai/gotty
 
 Bounty Platform used:
 
