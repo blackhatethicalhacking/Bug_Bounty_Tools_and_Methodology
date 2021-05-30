@@ -38,6 +38,8 @@ https://github.com/lc/gau
 https://github.com/hannob/snallygaster
 17) NMAP
 https://github.com/nmap/nmap
+18) Waybackurls
+https://github.com/tomnomnom/waybackurls
 
 Bounty Platform used:
 
