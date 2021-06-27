@@ -46,6 +46,8 @@ https://github.com/yudai/gotty
 https://github.com/tomnomnom/gf
 21) GF Patterns
 https://github.com/1ndianl33t/Gf-Patterns
+22) Paramspider
+https://github.com/devanshbatham/ParamSpider
 
 Bounty Platform used:
 
