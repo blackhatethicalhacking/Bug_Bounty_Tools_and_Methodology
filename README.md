@@ -48,6 +48,8 @@ https://github.com/tomnomnom/gf
 https://github.com/1ndianl33t/Gf-Patterns
 22) Paramspider
 https://github.com/devanshbatham/ParamSpider
+23) XSSER
+https://github.com/epsylon/xsser
 
 Bounty Platform used:
 
