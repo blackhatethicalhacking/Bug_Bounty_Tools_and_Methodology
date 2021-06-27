@@ -42,6 +42,10 @@ https://github.com/nmap/nmap
 https://github.com/tomnomnom/waybackurls
 19) Gotty
 https://github.com/yudai/gotty
+20) GF
+https://github.com/tomnomnom/gf
+21) GF Patterns
+https://github.com/1ndianl33t/Gf-Patterns
 
 Bounty Platform used:
 
