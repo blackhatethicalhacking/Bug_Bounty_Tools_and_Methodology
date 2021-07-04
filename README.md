@@ -50,6 +50,8 @@ https://github.com/1ndianl33t/Gf-Patterns
 https://github.com/devanshbatham/ParamSpider
 23) XSSER
 https://github.com/epsylon/xsser
+24) UPDOG
+https://github.com/sc0tfree/updog
 
 Bounty Platform used:
 
