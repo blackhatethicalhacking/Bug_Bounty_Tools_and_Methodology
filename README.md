@@ -52,6 +52,8 @@ https://github.com/devanshbatham/ParamSpider
 https://github.com/epsylon/xsser
 24) UPDOG
 https://github.com/sc0tfree/updog
+25) JSScanner
+https://github.com/dark-warlord14/JSScanner
 
 Bounty Platform used:
 
