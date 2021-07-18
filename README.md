@@ -54,6 +54,8 @@ https://github.com/epsylon/xsser
 https://github.com/sc0tfree/updog
 25) JSScanner
 https://github.com/dark-warlord14/JSScanner
+26) Takeover
+https://github.com/m4ll0k/takeover
 
 Bounty Platform used:
 
