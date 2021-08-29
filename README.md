@@ -56,6 +56,8 @@ https://github.com/sc0tfree/updog
 https://github.com/dark-warlord14/JSScanner
 26) Takeover
 https://github.com/m4ll0k/takeover
+27) Keyhacks
+https://github.com/streaak/keyhacks
 
 Bounty Platform used:
 
@@ -204,7 +206,11 @@ You are now ready for:
 
 xsser -i params_xss.txt
 
+11- After Recon: New!
 
+When you find Keys/Tokens - Check from here:
+
+https://github.com/streaak/keyhacks
 
 ********************************************************************************************************************
 
