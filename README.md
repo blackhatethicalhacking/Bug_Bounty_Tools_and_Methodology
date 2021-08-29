@@ -58,6 +58,8 @@ https://github.com/dark-warlord14/JSScanner
 https://github.com/m4ll0k/takeover
 27) Keyhacks
 https://github.com/streaak/keyhacks
+28) S3 Bucket AIO Pwn
+https://github.com/blackhatethicalhacking/s3-buckets-aio-pwn
 
 Bounty Platform used:
 
