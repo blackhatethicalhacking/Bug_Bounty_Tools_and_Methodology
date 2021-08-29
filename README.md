@@ -116,13 +116,17 @@ For example when using a raspberry pi, or VPS it helps uploading files locally o
 
 nmap -iL ips.txt -sSV -A -T4 -O -Pn -v -F -oX nmap2.xml
 
+Extra Sn1per - WebApp Mode: New!
+
+sniper -f /root/Desktop/Bounty/Airbnb/ips/valid-airbnb_ips.txt -m massweb -w airbnbtestweb
+
 **UPLOAD ALL RESULTS INTO PLATFORM**
 
 OSINT: (Can be done on RPI)
 
 Check for Domain TakeOver with Takeover by M4llok 
 
-Takeover Tool: New!
+Takeover Tool: 
 
 takeover -l sub_domains.txt -v -t 10
 
@@ -131,8 +135,18 @@ takeover -l sub_domains.txt -v -t 10
 
 spiderfoot -m sfp_azureblobstorage,sfp_s3bucket.sfp_digitaloceanspace -s DOMAIN.com -q
 
+Bonus:
 
-6. Use ParamSpider to Hunt for URLS with Parameters automatically from wayback machine - You can also use Arjun, we are switching to ParamSpider as part of building a workflow New!
+ls | grep s3 from nuclei-templates/technologies
+
+Can use nuclei -l urls.txt -t /root/nuclei-templates/technologies/s3-detect.yaml
+
+Attack Buckets: New!
+
+https://github.com/blackhatethicalhacking/s3-buckets-aio-pwn
+
+
+6. Use ParamSpider to Hunt for URLS with Parameters automatically from wayback machine - You can also use Arjun, we are switching to ParamSpider as part of building a workflow 
 
 python3 paramspider.py --domain DOMAINNAME.com --exclude woff,png,svg,php,jpg --output /root/Desktop/Bounty/params.txt
 
@@ -151,7 +165,7 @@ cat list_of_urls.txt | python3 smuggler.py -l /root/location.txt
 
 **Bonus**
 
-Tip 1: Add ‘tee’ to see realtime New!
+Tip 1: Add ‘tee’ to see realtime 
 
 Gau - for realtime URL extraction when performing manual search so you can have urls to attack.
 
@@ -208,11 +222,13 @@ You are now ready for:
 
 xsser -i params_xss.txt
 
-11- After Recon: New!
+10 - After Recon: New!
 
 When you find Keys/Tokens - Check from here:
 
 https://github.com/streaak/keyhacks
+
+
 
 ********************************************************************************************************************
 
@@ -244,6 +260,9 @@ chopchop / inception / jsql
 
 Sn1per - Bounty Mode on Active Results
 
+sniper -f /root/Desktop/Bounty/Airbnb/ips/valid-airbnb_ips.txt -m massweb -w airbnbtestweb
+
+
 RPI Copy:
 scp -P 7 /root/Desktop/test.txt root@192.168.0.12:/root
 
@@ -251,7 +270,6 @@ use Gotty
 https://github.com/yudai/gotty
 
 gotty -p 1337 -w recon-ng 
-
 
 
 You can watch us live on Twitch:
