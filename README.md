@@ -60,6 +60,8 @@ https://github.com/m4ll0k/takeover
 https://github.com/streaak/keyhacks
 28) S3 Bucket AIO Pwn
 https://github.com/blackhatethicalhacking/s3-buckets-aio-pwn
+29) BHEH Sub Pwner Recon
+https://github.com/blackhatethicalhacking/bheh-sub-pwner
 
 Bounty Platform used:
 
