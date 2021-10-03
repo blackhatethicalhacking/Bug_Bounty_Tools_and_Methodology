@@ -167,21 +167,15 @@ cat list_of_urls.txt | python3 smuggler.py -l /root/location.txt
 
 **Bonus**
 
-Tip 1: Add ‘tee’ to see realtime 
-
-Gau - for realtime URL extraction when performing manual search so you can have urls to attack.
-
-Hunt for Links that have Parameters by using gau (Get all URLS) and displaying all links that have params: 
-
-cat subdomains.txt | gau | tee /root/Desktop/urls.txt | lolcat
-
-gau domains -o urls.txt
-gau example.com
-gau -o example-urls.txt example.com
-gau -b png,jpg,gif example.com
+A) Eyewitness to take Screenshots of all URLS, Will run on VPS only! New!
 
 
-Pattern Check Example for Results with gf & gf-patterns: New!
+eyewitness -f /root/Desktop/Bounty/Client/urls.txt
+
+Examine the Results Manually
+
+
+B) Pattern Check Example for Results with gf & gf-patterns: 
 
 After you have the Parameters Gathered, we want to check for specific patterns and possible vulnerable URLs that can be attacked using Meg or other Fuzzing Tools.
 
@@ -198,7 +192,7 @@ sed 's/FUZZ//g' reconfile.txt
 
 meg -v LFI-gracefulsecurity-linux.txt /root/Desktop/Bounty/urls.txt /root/Desktop/urls.txt -s 200
 
-9. JSScanner: New!
+9. JSScanner: 
 
 Scanning Javascript Files for Endpoints, Secrets, Hardcoded credentials,IDOR, Openredirect and more
 
@@ -272,6 +266,18 @@ use Gotty
 https://github.com/yudai/gotty
 
 gotty -p 1337 -w recon-ng 
+
+Gau - for realtime URL extraction when performing manual search so you can have urls to attack.
+
+Hunt for Links that have Parameters by using gau (Get all URLS) and displaying all links that have params: 
+
+cat subdomains.txt | gau | tee /root/Desktop/urls.txt | lolcat
+
+gau domains -o urls.txt
+gau example.com
+gau -o example-urls.txt example.com
+gau -b png,jpg,gif example.com
+
 
 
 You can watch us live on Twitch:
