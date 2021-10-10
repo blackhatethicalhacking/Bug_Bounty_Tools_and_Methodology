@@ -64,6 +64,8 @@ https://github.com/blackhatethicalhacking/s3-buckets-aio-pwn
 https://github.com/blackhatethicalhacking/bheh-sub-pwner
 30) GitLeaks
 https://github.com/zricethezav/gitleaks
+31) Domain-2IP-Converter
+https://github.com/blackhatethicalhacking/Domain2IP-Converter
 
 Bounty Platform used:
 
@@ -113,6 +115,19 @@ https://github.com/blackhatethicalhacking/bheh-sub-pwner
 
 **UPLOAD ALL RESULTS INTO PLATFORM**
 
+Note:
+
+If you see domain.* you have to use the below technique:
+
+TLD Wordlist:
+
+https://gist.githubusercontent.com/gingeleski/b01633b07183ff572198dd7e31bbd4b0/raw/5e015d43b4e7b692be49fb3f42f03e1693c370bb/domain_extensions_payloads.txt
+
+Ctrl+H with regex mode enabled and replace ^ with domainname
+
+Then Use :
+
+https://github.com/blackhatethicalhacking/Domain2IP-Converter
 
 Use updog to offer easier workflow when uploading/checking directories locally.
 
@@ -294,6 +309,7 @@ gau domains -o urls.txt
 gau example.com
 gau -o example-urls.txt example.com
 gau -b png,jpg,gif example.com
+
 
 
 
