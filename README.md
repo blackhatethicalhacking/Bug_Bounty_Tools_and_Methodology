@@ -62,6 +62,8 @@ https://github.com/streaak/keyhacks
 https://github.com/blackhatethicalhacking/s3-buckets-aio-pwn
 29) BHEH Sub Pwner Recon
 https://github.com/blackhatethicalhacking/bheh-sub-pwner
+30) GitLeaks
+https://github.com/zricethezav/gitleaks
 
 Bounty Platform used:
 
@@ -96,6 +98,10 @@ Single Sub-domains:
 XXXX Enter from Scope XXXX
 
 Passive Recon Techniques:
+
+You can use also BHEH-SUB-PWNER New!
+
+https://github.com/blackhatethicalhacking/bheh-sub-pwner
 
 1. Create Folders (Subdomains, URLS, IPs)
 
@@ -172,6 +178,8 @@ A) Eyewitness to take Screenshots of all URLS, Will run on VPS only! New!
 
 eyewitness -f /root/Desktop/Bounty/Client/urls.txt
 
+zip -r name.zip folder
+
 Examine the Results Manually
 
 
@@ -203,10 +211,19 @@ Run script alive.txt - Examine the results using GF advanced patterns
 Use tree command, cat into subdirectories:
 
 cat * */*.txt
-cat */*.js | gf api-keys
-	
-
+cat */*.js | gf api-keys	
 cat /*/*.txt | gf ssrf > /root/Desktop/ssrf.txt
+
+Or New Method with GitLeaks: New!
+
+Scan a Directory with Javascripts, Files, Json Etc.. for Secrets!
+
+gitleaks --path=/directory -v --no-git
+
+Scan a File with Any Extension for Secrets!
+
+gitleaks --path=/file.xxx -v --no-git
+
  
 10. Find XSS Vulnerabilities from Paramspider & xsser
 
