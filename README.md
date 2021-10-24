@@ -66,6 +66,8 @@ https://github.com/blackhatethicalhacking/bheh-sub-pwner
 https://github.com/zricethezav/gitleaks
 31) Domain-2IP-Converter
 https://github.com/blackhatethicalhacking/Domain2IP-Converter
+32) Dalfox
+https://github.com/hahwul/dalfox
 
 Bounty Platform used:
 
@@ -240,17 +242,29 @@ Scan a File with Any Extension for Secrets!
 gitleaks --path=/file.xxx -v --no-git
 
  
-10. Find XSS Vulnerabilities from Paramspider & xsser
+10. Find XSS Vulnerabilities from Paramspider & Dalfox New!
 
-Since we have params urls from paramspider, XSSER needs to know where to inject, and is defined with XSS instead of FUZZ, so here is a command to replace this from the result, and create a new list to be used on xsser:
+Since we have params urls from paramspider, dalfox needs to know where to inject, and you can define it with XSS instead of FUZZ, so here is a command to replace this from the result, and create a new list to be used on dalfox.
 
 sed 's/FUZZ/XSS/g' reconfile.txt
 
-You are now ready for:
+You are now ready for parsing the urls into dalfox in pipe mode:
 
-xsser -i params_xss.txt
 
-10 - After Recon: New!
+cat /root/Desktop/Bounty/xss_params.txt | dalfox pipe | cut -d " " -f 2 > output.txt
+
+or
+
+dalfox file /root/Desktop/Bounty/xss_params.txt | cut -d " " -f 2 > output.txt
+
+For Deeper Attacks add this:
+
+--deep-domxss
+
+Silence --silence Prints only PoC When found and progress
+
+
+11 - After Recon: New!
 
 When you find Keys/Tokens - Check from here:
 
