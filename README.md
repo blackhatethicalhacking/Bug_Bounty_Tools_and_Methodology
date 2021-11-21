@@ -119,17 +119,6 @@ https://github.com/blackhatethicalhacking/bheh-sub-pwner
 
 Note:
 
-If you see domain.* you have to use the below technique:
-
-TLD Wordlist:
-
-https://gist.githubusercontent.com/gingeleski/b01633b07183ff572198dd7e31bbd4b0/raw/5e015d43b4e7b692be49fb3f42f03e1693c370bb/domain_extensions_payloads.txt
-
-Ctrl+H with regex mode enabled and replace ^ with domainname
-
-Then Use :
-
-https://github.com/blackhatethicalhacking/Domain2IP-Converter
 
 Use updog to offer easier workflow when uploading/checking directories locally.
 
@@ -139,15 +128,19 @@ For example when using a raspberry pi, or VPS it helps uploading files locally o
 
 5. Use Nmap Aggressive Scan & Save to XML to Import into Bounty Platform:
 
-nmap -iL ips.txt -sSV -A -T4 -O -Pn -v -F -oX nmap2.xml
+nmap cidr also if possible:
 
-Extra Sn1per - WebApp Mode: New!
+nmap CIDR -sSV -A -T4 -O -Pn -v -F -oX nmap_output.xml
+
+nmap -iL ips.txt -sSV -A -T4 -O -Pn -v -F -oX nmap_output.xml
+
+Extra Sn1per - WebApp Mode: 
 
 sniper -f /root/Desktop/Bounty/Airbnb/ips/valid-airbnb_ips.txt -m massweb -w airbnbtestweb
 
 **UPLOAD ALL RESULTS INTO PLATFORM**
 
-OSINT: (Can be done on RPI)
+OSINT: (Can be done on RPI, VPS or another External Mach1ne)
 
 Check for Domain TakeOver with Takeover by M4llok 
 
@@ -156,17 +149,13 @@ Takeover Tool:
 takeover -l sub_domains.txt -v -t 10
 
 
-**Check for open Amazon S3 buckets, Digital Ocean & Azure** 
-
-spiderfoot -m sfp_azureblobstorage,sfp_s3bucket.sfp_digitaloceanspace -s DOMAIN.com -q
-
-Bonus:
+**Check for open Amazon S3 buckets
 
 ls | grep s3 from nuclei-templates/technologies
 
 Can use nuclei -l urls.txt -t /root/nuclei-templates/technologies/s3-detect.yaml
 
-Attack Buckets: New!
+Attack Buckets: 
 
 https://github.com/blackhatethicalhacking/s3-buckets-aio-pwn
 
@@ -323,8 +312,6 @@ gau domains -o urls.txt
 gau example.com
 gau -o example-urls.txt example.com
 gau -b png,jpg,gif example.com
-
-
 
 
 You can watch us live on Twitch:
