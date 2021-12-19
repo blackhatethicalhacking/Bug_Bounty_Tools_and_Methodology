@@ -68,6 +68,8 @@ https://github.com/zricethezav/gitleaks
 https://github.com/blackhatethicalhacking/Domain2IP-Converter
 32) Dalfox
 https://github.com/hahwul/dalfox
+33) Log4j Scanner
+https://github.com/Black-Hat-Ethical-Hacking/log4j-scan
 
 Bounty Platform used:
 
