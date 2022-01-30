@@ -144,6 +144,27 @@ sniper -f /root/Desktop/Bounty/Airbnb/ips/valid-airbnb_ips.txt -m massweb -w air
 
 **UPLOAD ALL RESULTS INTO PLATFORM**
 
+5b. Extra Osmedeus Scan New!
+
+You can use on the list of IP addresses, a domain or list of URLs gathered Osemedeus with UI to go for more in depth recon/attacks on CVEs:
+
+osmedeus server
+
+For the UI 
+
+## Directly run on vuln scan and directory scan on list of domains 
+osmedeus scan -f vuln-and-dirb -t list-of-domains.txt
+
+## Scan list of targets 
+osmedeus scan -T list_of_targets.txt
+
+## Get target from a stdin and start the scan with 2 concurrency 
+cat list_of_targets.txt | osmedeus scan -c 2
+ 
+## Start a simple scan with default 'general' flow 
+osmedeus scan -t sample.com
+
+
 OSINT: (Can be done on RPI, VPS or another External Mach1ne)
 
 Check for Domain TakeOver with Takeover by M4llok 
