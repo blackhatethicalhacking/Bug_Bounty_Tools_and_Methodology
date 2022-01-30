@@ -70,6 +70,8 @@ https://github.com/blackhatethicalhacking/Domain2IP-Converter
 https://github.com/hahwul/dalfox
 33) Log4j Scanner
 https://github.com/Black-Hat-Ethical-Hacking/log4j-scan
+34) Osmedeus
+https://github.com/j3ssie/osmedeus
 
 Bounty Platform used:
 
