@@ -72,6 +72,9 @@ https://github.com/hahwul/dalfox
 https://github.com/Black-Hat-Ethical-Hacking/log4j-scan
 34) Osmedeus
 https://github.com/j3ssie/osmedeus
+35) getJS
+https://github.com/003random/getJS
+
 
 Bounty Platform used:
 
@@ -123,6 +126,19 @@ https://github.com/blackhatethicalhacking/bheh-sub-pwner
 
 Note:
 
+If you see domain.* you have to use the below technique:
+
+TLD Wordlist:
+
+https://gist.githubusercontent.com/gingeleski/b01633b07183ff572198dd7e31bbd4b0/raw/5e015d43b4e7b692be49fb3f42f03e1693c370bb/domain_extensions_payloads.txt
+
+Ctrl+H with regex mode enabled and replace ^ with domainname
+
+Then Use :
+
+https://github.com/blackhatethicalhacking/Domain2IP-Converter
+
+Then Run subdomains using httpx for urls
 
 Use updog to offer easier workflow when uploading/checking directories locally.
 
@@ -132,11 +148,7 @@ For example when using a raspberry pi, or VPS it helps uploading files locally o
 
 5. Use Nmap Aggressive Scan & Save to XML to Import into Bounty Platform:
 
-nmap cidr also if possible:
-
-nmap CIDR -sSV -A -T4 -O -Pn -v -F -oX nmap_output.xml
-
-nmap -iL ips.txt -sSV -A -T4 -O -Pn -v -F -oX nmap_output.xml
+nmap -iL ips.txt -sSV -A -T4 -O -Pn -v -F -oX nmap2.xml
 
 Extra Sn1per - WebApp Mode: 
 
@@ -144,28 +156,55 @@ sniper -f /root/Desktop/Bounty/Airbnb/ips/valid-airbnb_ips.txt -m massweb -w air
 
 **UPLOAD ALL RESULTS INTO PLATFORM**
 
+Examine Some Services Manually from the Cloud Platform Hive: New!
+
+Use Metasploit + Searchsploit to manually search - note down certain areas of interest including Log4j Patterns.
+
+This could take days/weeks - So, its a non stop process.
+
 5b. Extra Osmedeus Scan New!
 
 You can use on the list of IP addresses, a domain or list of URLs gathered Osemedeus with UI to go for more in depth recon/attacks on CVEs:
 
 osmedeus server
 
-For the UI 
+for the UI 
 
 ## Directly run on vuln scan and directory scan on list of domains 
 osmedeus scan -f vuln-and-dirb -t list-of-domains.txt
 
 ## Scan list of targets 
-osmedeus scan -T list_of_targets.txt
+  osmedeus scan -T list_of_targets.txt
 
 ## Get target from a stdin and start the scan with 2 concurrency 
-cat list_of_targets.txt | osmedeus scan -c 2
+  cat list_of_targets.txt | osmedeus scan -c 2
  
 ## Start a simple scan with default 'general' flow 
-osmedeus scan -t sample.com
+  osmedeus scan -t sample.com
 
+One Liner Very Powerful Techniques New! 
 
-OSINT: (Can be done on RPI, VPS or another External Mach1ne)
+Check for Heartbleed:
+
+cat subdomains.txt | while read line ; do echo "QUIT" | openssl s_client -connect $line:443 2>&1 | grep 'server extension "heartbeat" (id=15)' || echo $line: safe; done
+
+Extract Javascripts from domains, and fetch only the URLS from those big files, can also be used with any type of file containing huge data:
+
+First use getJs to get the Javascripts:
+
+getJS --url website.com --output /root/results.txt
+
+getJS --input urls.txt --output /root/results.txt
+
+Extract URLs directly or from a file using this one-liner:
+
+From any type of file:
+cat file | grep -Eo "(http|https)://[a-zA-Z0-9./?=_-]*"*
+
+Directly from a website:
+curl https://domain.xx/file.js | grep -Eo "(http|https)://[a-zA-Z0-9./?=_-]*"*
+
+OSINT: (Can be done on RPI)
 
 Check for Domain TakeOver with Takeover by M4llok 
 
@@ -180,10 +219,9 @@ ls | grep s3 from nuclei-templates/technologies
 
 Can use nuclei -l urls.txt -t /root/nuclei-templates/technologies/s3-detect.yaml
 
-Attack Buckets: 
+Attack Buckets: New!
 
 https://github.com/blackhatethicalhacking/s3-buckets-aio-pwn
-
 
 6. Use ParamSpider to Hunt for URLS with Parameters automatically from wayback machine - You can also use Arjun, we are switching to ParamSpider as part of building a workflow 
 
@@ -277,14 +315,11 @@ For Deeper Attacks add this:
 
 Silence --silence Prints only PoC When found and progress
 
-
-11 - After Recon: New!
+10 - After Recon: New!
 
 When you find Keys/Tokens - Check from here:
 
 https://github.com/streaak/keyhacks
-
-
 
 ********************************************************************************************************************
 
@@ -337,7 +372,6 @@ gau domains -o urls.txt
 gau example.com
 gau -o example-urls.txt example.com
 gau -b png,jpg,gif example.com
-
 
 You can watch us live on Twitch:
 
