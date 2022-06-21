@@ -377,4 +377,4 @@ You can watch us live on Twitch:
 
 https://www.twitch.tv/bheh1337
 
-**blackhatethicalhacking.com // 2021 // All Rights Reserved**
+**blackhatethicalhacking.com // 2022// All Rights Reserved**
