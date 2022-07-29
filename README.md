@@ -386,7 +386,6 @@ https://www.twitch.tv/bheh1337
 
 # Support
 
-If you would like to support us, you can always buy us coffee(s)! :-)
+If you would like to support us, you can always buy us coffee(s)! :blush:
 
 <a href="https://www.buymeacoffee.com/bheh" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
-
