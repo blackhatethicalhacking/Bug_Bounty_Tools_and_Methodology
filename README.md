@@ -383,3 +383,10 @@ You can watch us live on Twitch:
 https://www.twitch.tv/bheh1337
 
 **blackhatethicalhacking.com // 2022// All Rights Reserved**
+
+# Support
+
+If you would like to support us, you can always buy us coffee(s)! :-)
+
+<a href="https://www.buymeacoffee.com/bheh" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+
