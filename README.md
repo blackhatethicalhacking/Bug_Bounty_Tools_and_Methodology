@@ -7,6 +7,8 @@
 <a href="https://www.blackhatethicalhacking.com"><img src="https://www.blackhatethicalhacking.com/wp-content/uploads/2022/06/BHEH_logo.png" width="300px" alt="BHEH"></a>
 </p>
 
+A special thanks to all the star gazers, we see you!
+
 Here are some of the tools that we use when we perform Live Recon Passive ONLY on Twitch:
 
 1) Recon-ng
