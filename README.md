@@ -7,15 +7,29 @@
 <a href="https://www.blackhatethicalhacking.com"><img src="https://www.blackhatethicalhacking.com/wp-content/uploads/2022/06/BHEH_logo.png" width="300px" alt="BHEH"></a>
 </p>
 
-<h1 align="center"><b>Black Hat Ethical Hacking</b></h1>
+<h2 align="center"><u>Black Hat Ethical Hacking</u>
+
+![summary](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=blackhatethicalhacking&theme=monokai)
 
 <p align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=blackhatethicalhacking&show_icons=true&include_all_commits=true">
-<br>
-<br>
+    <a align="center" href="https://github.com/blackhatethicalhacking" target="_blank"><img src="https://img.shields.io/badge/Github-blackhatethicalhacking-green?style=for-the-badge&logo=github"></a>
 </p>
 
-📫 How to reach me: chris@blackhatethicalhacking.com
+---
+
+![Metrics](https://metrics.lecoq.io/blackhatethicalhacking?template=classic&base=header%2C%20activity%2C%20community%2C%20repositories%2C%20metadata&base.indepth=false&base.hireable=false&base.skip=false&config.timezone=Asia%2FNicosia)
+
+
+<p align="center">
+    <img src="https://github-readme-stats.vercel.app/api?username=blackhatethicalhacking&show_icons=true&include_all_commits=true">
+</p></h2>
+
+---
+
+<p align="center">
+    📫 How to reach me: chris@blackhatethicalhacking.com
+</p>
+
 
 # A special thanks to all the star gazers, we see you!
 
