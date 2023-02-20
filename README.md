@@ -7,7 +7,19 @@
 <a href="https://www.blackhatethicalhacking.com"><img src="https://www.blackhatethicalhacking.com/wp-content/uploads/2022/06/BHEH_logo.png" width="300px" alt="BHEH"></a>
 </p>
 
-A special thanks to all the star gazers, we see you!
+<h1 align="center"><b>Black Hat Ethical Hacking</b></h1>
+
+<p align="center">
+<img src="https://github-readme-stats.vercel.app/api?username=blackhatethicalhacking&show_icons=true&include_all_commits=true">
+<br>
+<br>
+</p>
+
+📫 How to reach me: chris@blackhatethicalhacking.com
+
+# A special thanks to all the star gazers, we see you!
+
+# Description
 
 Here are some of the tools that we use when we perform Live Recon Passive ONLY on Twitch:
 
