@@ -34,77 +34,42 @@
 
 Here are some of the tools that we use when we perform Live Recon Passive ONLY on Twitch:
 
-1) Recon-ng
-https://github.com/lanmaster53/recon-ng
-2) httpx
-https://github.com/projectdiscovery/httpx
-3) isup.sh
-https://github.com/gitnepal/isup
-4) Arjun
-https://github.com/s0md3v/Arjun
-5) jSQL
-https://github.com/ron190/jsql-injection
-6) Smuggler
-https://github.com/defparam/smuggler
-7) Sn1per
-https://github.com/1N3/Sn1per
-8) Spiderfoot
-https://github.com/smicallef/spiderfoot
-9) Nuclei
-https://github.com/projectdiscovery/nuclei
-10) Jaeles
-https://github.com/jaeles-project/jaeles
-11) ChopChop
-https://github.com/michelin/ChopChop
-12) Inception
-https://github.com/proabiral/inception
-13) Eyewitness
-https://github.com/FortyNorthSecurity/EyeWitness
-14) Meg
-https://github.com/tomnomnom/meg
-15) Gau - Get All Urls
-https://github.com/lc/gau
-16) Snallygaster
-https://github.com/hannob/snallygaster
-17) NMAP
-https://github.com/nmap/nmap
-18) Waybackurls
-https://github.com/tomnomnom/waybackurls
-19) Gotty
-https://github.com/yudai/gotty
-20) GF
-https://github.com/tomnomnom/gf
-21) GF Patterns
-https://github.com/1ndianl33t/Gf-Patterns
-22) Paramspider
-https://github.com/devanshbatham/ParamSpider
-23) XSSER
-https://github.com/epsylon/xsser
-24) UPDOG
-https://github.com/sc0tfree/updog
-25) JSScanner
-https://github.com/dark-warlord14/JSScanner
-26) Takeover
-https://github.com/m4ll0k/takeover
-27) Keyhacks
-https://github.com/streaak/keyhacks
-28) S3 Bucket AIO Pwn
-https://github.com/blackhatethicalhacking/s3-buckets-aio-pwn
-29) BHEH Sub Pwner Recon
-https://github.com/blackhatethicalhacking/bheh-sub-pwner
-30) GitLeaks
-https://github.com/zricethezav/gitleaks
-31) Domain-2IP-Converter
-https://github.com/blackhatethicalhacking/Domain2IP-Converter
-32) Dalfox
-https://github.com/hahwul/dalfox
-33) Log4j Scanner
-https://github.com/Black-Hat-Ethical-Hacking/log4j-scan
-34) Osmedeus
-https://github.com/j3ssie/osmedeus
-35) getJS
-https://github.com/003random/getJS
-
+1. [Recon-ng](https://github.com/lanmaster53/recon-ng) - A full-featured reconnaissance framework.
+2. [httpx](https://github.com/projectdiscovery/httpx) - A fast and multi-purpose HTTP toolkit.
+3. [isup.sh](https://github.com/gitnepal/isup) - A tool to check whether a website is up or down from various locations.
+4. [Arjun](https://github.com/s0md3v/Arjun) - A tool to find hidden parameters in URLs.
+5. [jSQL](https://github.com/ron190/jsql-injection) - A SQL injection tool for automatic exploitation.
+6. [Smuggler](https://github.com/defparam/smuggler) - A smuggling detection and exploitation tool.
+7. [Sn1per](https://github.com/1N3/Sn1per) - An automated scanner to find security vulnerabilities.
+8. [Spiderfoot](https://github.com/smicallef/spiderfoot) - An open-source intelligence (OSINT) automation tool.
+9. [Nuclei](https://github.com/projectdiscovery/nuclei) - A fast and customizable vulnerability scanner.
+10. [Jaeles](https://github.com/jaeles-project/jaeles) - A framework for testing and exploiting vulnerabilities in web applications.
+11. [ChopChop](https://github.com/michelin/ChopChop) - A security testing tool to exploit XSS via different methods.
+12. [Inception](https://github.com/proabiral/inception) - A network-based Android penetration testing suite.
+13. [Eyewitness](https://github.com/FortyNorthSecurity/EyeWitness) - A tool to take screenshots of web pages.
+14. [Meg](https://github.com/tomnomnom/meg) - A tool to fetch many paths from a web server.
+15. [Gau - Get All Urls](https://github.com/lc/gau) - A tool to extract URLs from the wayback machine.
+16. [Snallygaster](https://github.com/hannob/snallygaster) - A tool to scan for secret files on HTTP servers.
+17. [NMAP](https://github.com/nmap/nmap) - A powerful network discovery and security auditing tool.
+18. [Waybackurls](https://github.com/tomnomnom/waybackurls) - A tool to fetch all the URLs that the wayback machine knows for a domain.
+19. [Gotty](https://github.com/yudai/gotty) - A simple command-line tool to turn your CLI tools into web applications.
+20. [GF](https://github.com/tomnomnom/gf) - A wrapper around grep to extract and manipulate data.
+21. [GF Patterns](https://github.com/1ndianl33t/Gf-Patterns) - A collection of useful patterns for the GF (grep-friendly) tool.
+22. [Paramspider](https://github.com/devanshbatham/ParamSpider) - A tool to enumerate web parameters and spider a target more effectively.
+23. [XSSER](https://github.com/epsylon/xsser) - A tool for automatic XSS vulnerability detection.
+24. [UPDOG](https://github.com/sc0tfree/updog) - A quick and simple file hosting service.
+25. [JSScanner](https://github.com/dark-warlord14/JSScanner) - A tool to find JavaScript files on a target and scan them for endpoints.
+26. [Takeover](https://github.com/m4ll0k/takeover) - A tool to detect subdomain takeover vulnerabilities.
+27. [Keyhacks](https://github.com/streaak/keyhacks) - A tool for finding exposed API keys on GitHub.
+28. [S3 Bucket AIO Pwn](https://github.com/blackhatethicalhacking/s3-buckets-aio-pwn) - A tool to find and exploit S3 buckets.
+29. [BHEH Sub Pwner Recon](https://github.com/blackhatethicalhacking/bheh-sub-pwner) - A subdomain takeover reconnaissance tool.
+30. [GitLeaks](https://github.com/zricethezav/gitleaks) - A tool to find secrets and sensitive files in Git repositories.
+31. [Domain-2IP-Converter](https://github.com/blackhatethicalhacking/Domain2IP-Converter) - A tool to convert domain names to IP addresses.
+32. [Dalfox](https://github.com/hahwul/dalfox) - A fast parameter analysis and XSS scanner.
+33. [Log4j Scanner](https://github.com/Black-Hat-Ethical-Hacking/log4j-scan) - A scanner for the Log4j vulnerability.
+34. [Osmedeus](https://github.com/j3ssie/osmedeus) - A fully automated tool to collect and analyze attack data.
+35. [getJS](https://github.com/003random/getJS) - A tool to find JavaScript files in a website and gather information about them.
+36. [Amass](https://github.com/owasp-amass/amass) - An open-source tool to help information security professionals perform network mapping.
 
 #### Bounty Platform used:
 
