@@ -24,15 +24,37 @@
 ---
 
 <p align="center">
-    📫 How to reach me: chris@blackhatethicalhacking.com
+    📫 <strong>How to reach me:</strong> chris@blackhatethicalhacking.com
 </p>
 
 
-# A special thanks to all the star gazers, we see you!
+<p align="center">
+    <img src="https://img.icons8.com/material-rounded/24/000000/star--v1.png"/> <strong>A special thanks to all the star gazers, we see you!</strong> <img src="https://img.icons8.com/material-rounded/24/000000/star--v1.png"/>
+</p>
+
+
 
 # Description
 
-Here are some of the tools that we use when we perform Live Recon Passive ONLY on Twitch:
+<p align="center">
+    🛡️ <strong>Discover the Red Team Way</strong>
+</p>
+
+We've meticulously crafted this methodology to elevate the hacking prowess of security researchers. It provides a glimpse into how BHEH's Red Team conducts bug bounty missions. It's never about the certificates you earn; it's about the authentic experience you gain. The real world is far more intricate than practice. Companies bolster their security, investing substantial resources to safeguard, detect, and respond. Yet, this methodology remains triumphant, garnering us numerous successful bug bounty awards.
+
+While our techniques may evolve over time due to emerging tools and methods, this foundation forms the cornerstone for all reconnaissance, essential to crafting a precise vector of attacks. Recon and OSINT constitute 90% of the work, with attacks comprising the rest. Don't lose heart; persevere, practice diligently, educate yourself, and embrace continuous learning. This journey requires time, dedication, and unwavering consistency. Remember, you're driven by passion, not just monetary gain. You're demonstrating how a 1337 ethical hacker dismantles defenses to make a point and earn recognition.
+
+If all bug bounty hunters adopt this methodology, results will echo. By refining your techniques, investing more time in Recon, and elevating quality, you'll outshine others. Expect fewer duplicates and focus on more challenging targets.
+
+<p align="center">
+    🎓 <strong>Check Out Our Comprehensive Bug Bounty Hunting Course</strong>
+</p>
+
+<p align="center">
+  <a href="https://www.blackhatethicalhacking.com/courses">Bug Bounty Course</a>
+</p>
+
+## Here are some of the tools that we use when we perform Live Recon ONLY on Twitch:
 
 1. [Recon-ng](https://github.com/lanmaster53/recon-ng) - A full-featured reconnaissance framework.
 2. [httpx](https://github.com/projectdiscovery/httpx) - A fast and multi-purpose HTTP toolkit.
@@ -81,54 +103,44 @@ Here are some of the tools that we use when we perform Live Recon Passive ONLY o
 
 #### As seen on Hackerone.com Passive Bounty Focused for Quick Pwning:
 
-Project Notes & Recon Approach Techniques:
+## Project Notes & Recon Approach Techniques:
 
-Main Domain:
+**Main Domain:**
+`XXXX Enter from Scope XXXX`
 
-XXXX Enter from Scope XXXX
+**Secondary `*.*` Domains:**
+`XXXX Enter from Scope XXXX`
 
+**Single Sub-domains:**
+`XXXX Enter from Scope XXXX`
 
+**Passive Recon Techniques:**
+- You can use also [BHEH-SUB-PWNER](https://github.com/blackhatethicalhacking/bheh-sub-pwner) New!
 
-Secondary *.* Domains:
+**First things first:**
 
-XXXX Enter from Scope XXXX
-
-
-
-Single Sub-domains:
-
-XXXX Enter from Scope XXXX
-
-Passive Recon Techniques:
-
-You can use also BHEH-SUB-PWNER New!
-
-https://github.com/blackhatethicalhacking/bheh-sub-pwner
-
-- 1. Create Folders (Subdomains, URLS, IPs)
-- 2. Recon-ng - Recon Passively for subdomains/ips/ports/params/js
-- 3. Export lists from recon-ng and use httpx to create urls/probing (urls/IPs/Subdomains)
-- 4. Use isup.sh to filter ips 
+1. Create Folders (Subdomains, URLS, IPs)
+2. Recon-ng - Recon Passively for subdomains/ips/ports/params/js
+3. Export lists from recon-ng and use httpx to create urls/probing (urls/IPs/Subdomains)
+4. Use isup.sh to filter ips 
 
 **UPLOAD ALL RESULTS INTO PLATFORM**
 
-> `Note`: If you see domain.* you have to use the below technique:
+> `Note`: If you see domain.* you have to use the below technique, check this file:
 
-TLD Wordlist:
+[TLD Wordlist](https://gist.githubusercontent.com/gingeleski/b01633b07183ff572198dd7e31bbd4b0/raw/5e015d43b4e7b692be49fb3f42f03e1693c370bb/domain_extensions_payloads.txt)
 
-https://gist.githubusercontent.com/gingeleski/b01633b07183ff572198dd7e31bbd4b0/raw/5e015d43b4e7b692be49fb3f42f03e1693c370bb/domain_extensions_payloads.txt
-
-Ctrl+H with regex mode enabled and replace ^ with domainname
+Ctrl+H with regex mode enabled and replace ^ with the domain name
 
 Then Use :
 
-https://github.com/blackhatethicalhacking/Domain2IP-Converter
+[Domain2IP-Converter](https://github.com/blackhatethicalhacking/Domain2IP-Converter)
 
-Then Run subdomains using httpx for urls
+Then Run subdomains using `httpx` for URLs:
 
-Use updog to offer easier workflow when uploading/checking directories locally.
+Use `updog` to offer easier workflow when uploading/checking directories locally.
 
-For example when using a raspberry pi, or VPS it helps uploading files locally on the machine.
+For example when using a Raspberry Pi, or VPS it helps uploading files locally on the machine.
 
 ********************************************************************************************************************
 
@@ -138,33 +150,56 @@ For example when using a raspberry pi, or VPS it helps uploading files locally o
 nmap -iL ips.txt -sSV -A -T4 -O -Pn -v -F -oX nmap2.xml
 ```
 
-Extra Sn1per - WebApp Mode: 
+**Extra Sn1per - WebApp Mode:**
 
 ```
 sniper -f /root/Desktop/Bounty/Airbnb/ips/valid-airbnb_ips.txt -m massweb -w airbnbtestweb
 ```
-**UPLOAD ALL RESULTS INTO PLATFORM**
+_**UPLOAD ALL RESULTS INTO PLATFORM**_
 
 Examine Some Services Manually from the Cloud Platform Hive: New!
 
-Use Metasploit + Searchsploit to manually search - note down certain areas of interest including Log4j Patterns.
+Use `Metasploit` + `Searchsploit` to manually search - note down certain areas of interest including `Log4j` Patterns.
 
-This could take days/weeks - So, its a non stop process.
+This could take days/weeks - So, its a _non stop process_.
 
-5b. Extra Osmedeus Scan New!
+5b. Extra `Osmedeus` Scan New!
 
 You can use on the list of IP addresses, a domain or list of URLs gathered Osemedeus with UI to go for more in depth recon/attacks on CVEs:
 
-osmedeus server
+`osmedeus server`
 
-for the UI 
+**For the UI:**
+
+Get Credentials from here:
+
+```
+cat ~/.osmedeus/config.yaml
+
+...
+client:
+  password: xxxx
+  username: osmedeus
+...
+```
+**Then visit:** `[YOURIP:8000](https://your-vps-ip:8000/ui/)`
+
+![image](https://github.com/blackhatethicalhacking/Bug_Bounty_Tools_and_Methodology/assets/13942386/684d0396-9987-4c37-b32e-0410733c4273)
 
 ## Directly run on vuln scan and directory scan on list of domains 
+
 ```
 osmedeus scan -f vuln-and-dirb -t list-of-domains.txt
 ```
-
+## Performing static vulnerability scan and secret scan on a git repo
+  
+  ```
+  osmedeus scan -m repo-scan -t https://github.com/j3ssie/sample-repo
+  osmedeus scan -m repo-scan -t /tmp/source-code-folder
+  osmedeus scan -m repo-scan -T list-of-repo.txt
+  ```
 ## Scan list of targets 
+
 ```
 osmedeus scan -T list_of_targets.txt
 ```
@@ -179,15 +214,15 @@ cat list_of_targets.txt | osmedeus scan -c 2
 osmedeus scan -t sample.com
 ```
 
-One Liner Very Powerful Techniques New! 
+## One Liner Very Powerful Techniques New! 
 
-Check for Heartbleed:
+**Check for Heartbleed:**
 
 ```
 cat subdomains.txt | while read line ; do echo "QUIT" | openssl s_client -connect $line:443 2>&1 | grep 'server extension "heartbeat" (id=15)' || echo $line: safe; done
 ```
 
-Extract Javascripts from domains, and fetch only the URLS from those big files, can also be used with any type of file containing huge data:
+**Extract Javascripts from domains, and fetch only the URLS from those big files, can also be used with any type of file containing huge data:**
 
 First use getJs to get the Javascripts:
 
@@ -199,7 +234,7 @@ getJS --url website.com --output /root/results.txt
 getJS --input urls.txt --output /root/results.txt
 ```
 
-Extract URLs directly or from a file using this one-liner:
+**Extract URLs directly or from a file using this one-liner:**
 
 From any type of file:
 ```
@@ -211,27 +246,27 @@ Directly from a website:
 curl https://domain.xx/file.js | grep -Eo "(http|https)://[a-zA-Z0-9./?=_-]*"*
 ```
 
-OSINT: (Can be done on RPI)
+**OSINT: (Can be done on RPI)**
 
-Check for Domain TakeOver with Takeover by M4llok 
+Check for Domain TakeOver with `Takeover` by M4llok 
 
 Takeover Tool: 
 ```
 takeover -l sub_domains.txt -v -t 10
 ```
 
-**Check for open Amazon S3 buckets
+**Check for open Amazon S3 buckets**
 ```
 ls | grep s3 from nuclei-templates/technologies
 ```
 
-Can use nuclei -l urls.txt -t /root/nuclei-templates/technologies/s3-detect.yaml
+Can use `nuclei -l urls.txt -t /root/nuclei-templates/technologies/s3-detect.yaml`
 
 Attack Buckets: New!
 
-https://github.com/blackhatethicalhacking/s3-buckets-aio-pwn
+- [s3-buckets-aio-pwn](https://github.com/blackhatethicalhacking/s3-buckets-aio-pwn)
 
-6. Use ParamSpider to Hunt for URLS with Parameters automatically from wayback machine - You can also use Arjun, we are switching to ParamSpider as part of building a workflow 
+6. Use ParamSpider to Hunt for URLS with Parameters automatically from wayback machine - You can also use `Arjun`, we are switching to `ParamSpider` as part of building a workflow 
 
 ```
 python3 paramspider.py --domain DOMAINNAME.com --exclude woff,png,svg,php,jpg --output /root/Desktop/Bounty/params.txt
@@ -266,19 +301,18 @@ zip -r name.zip folder
 Examine the Results Manually
 
 
-B) Pattern Check Example for Results with gf & gf-patterns: 
+B) Pattern Check Example for Results with `gf` & `gf-patterns`: 
 
 After you have the Parameters Gathered, we want to check for specific patterns and possible vulnerable URLs that can be attacked using Meg or other Fuzzing Tools.
 ```
 cat /root/Desktop/Bounty/params.txt | gf xss | sed 's/FUZZ/ /g' >> /root/Desktop/Bounty/xss_params_forMeg.txt
 ```
 
-Very Powerful One Liner - You can Pipe also directly to Meg.
+**Very Powerful One Liner - You can Pipe also directly to Meg:**
 
+Use `Meg` with Seclist fuzzing for Links: (Gathered from `gau/arjun/paramspider/gf`)
 
-8. Use Meg with Seclist fuzzing for Links: (Gathered from gau/arjun/paramspider/gf)
-
-For Meg, we must remove the ‘FUZZ’ from paramspider and replace it with a null character:
+For `Meg`, we must remove the ‘FUZZ’ from paramspider and replace it with a null character:
 
 ```
 sed 's/FUZZ//g' reconfile.txt
@@ -287,7 +321,7 @@ sed 's/FUZZ//g' reconfile.txt
 meg -v LFI-gracefulsecurity-linux.txt /root/Desktop/Bounty/urls.txt /root/Desktop/urls.txt -s 200
 ```
 
-9. JSScanner: 
+9. `JSScanner`: 
 
 Scanning Javascript Files for Endpoints, Secrets, Hardcoded credentials,IDOR, Openredirect and more
 
@@ -302,7 +336,7 @@ cat */*.js | gf api-keys
 cat /*/*.txt | gf ssrf > /root/Desktop/ssrf.txt
 ```
 
-Or New Method with GitLeaks: New!
+Or New Method with `GitLeaks`: New!
 
 Scan a Directory with Javascripts, Files, Json Etc.. for Secrets!
 ```
@@ -314,7 +348,7 @@ Scan a File with Any Extension for Secrets!
 gitleaks --path=/file.xxx -v --no-git
 ```
  
-10. Find XSS Vulnerabilities from Paramspider & Dalfox New!
+10. Find XSS Vulnerabilities from `Paramspider` & `Dalfox` New!
 
 Since we have params urls from paramspider, dalfox needs to know where to inject, and you can define it with XSS instead of FUZZ, so here is a command to replace this from the result, and create a new list to be used on dalfox.
 
@@ -337,13 +371,13 @@ dalfox file /root/Desktop/Bounty/xss_params.txt | cut -d " " -f 2 > output.txt
 
 For Deeper Attacks add this:
 
---deep-domxss
+`--deep-domxss`
 
-Silence --silence Prints only PoC When found and progress
+Silence `--silence` Prints only PoC When found and progress
 
 10 - After Recon: New!
 
-When you find Keys/Tokens - Check from here: https://github.com/streaak/keyhacks
+When you find Keys/Tokens - Check from here: [Keyhacks](https://github.com/streaak/keyhacks)
 
 ********************************************************************************************************************
 
@@ -351,16 +385,16 @@ OSINT & Passive Amplified Attacks: (Raspberry Pi)
 
 OSINT:
 
-Perform OSINT using spiderfoot
+Perform OSINT using `spiderfoot`
 
-One off 1337 Powerful Command Attacks with amass:
+One off **1337** Powerful Command Attacks with `Amass`:
 
-#### 1. Nuclei:
+#### 1. Amass into Nuclei:
 ```
 amass enum -passive -d [subdomain] -v | httpx -verbose | nuclei -t /root/nuclei-templates/cves/ -o /root/Desktop/Bounty/location.txt
 ```
 
-#### 2. Jaeles:
+#### 2. Amass into Jaeles:
 ```
 amass enum -passive -d [Domain] -v | httpx -verbose | jaeles scan -s 'cves' -s 'sensitive' -s 'fuzz' -s ‘common' -s 'routines' report -o /root/Desktop/Bounty/reportname.txt --title "[Client] Jaeles Full Report"
 ```
@@ -388,13 +422,14 @@ sniper -f /root/Desktop/Bounty/Airbnb/ips/valid-airbnb_ips.txt -m massweb -w air
 scp -P 7 /root/Desktop/test.txt root@192.168.0.12:/root
 ```
 
-#### use Gotty - https://github.com/yudai/gotty
+#### use Gotty - [gotty](https://github.com/yudai/gotty)
+
 
 ```
 gotty -p 1337 -w recon-ng 
 ```
 
-Gau - for realtime URL extraction when performing manual search so you can have urls to attack.
+`Gau` - for realtime URL extraction when performing manual search so you can have urls to attack.
 
 Hunt for Links that have Parameters by using gau (Get all URLS) and displaying all links that have params: 
 
@@ -418,11 +453,14 @@ gau -o example-urls.txt example.com
 gau -b png,jpg,gif example.com
 ```
 
-You can watch us live on Twitch:
+You can watch us live on Twitch but also get access to over 100 Episodes performed Live for you:
 
-https://www.twitch.tv/bheh1337
+[Twitch](https://www.twitch.tv/bheh1337)
 
-**blackhatethicalhacking.com // 2022// All Rights Reserved**
+
+<p align="center">
+  <img src="https://img.shields.io/badge/-blackhatethicalhacking.com%20%2F%2F%202023%20%2F%2F%20All%20Rights%20Reserved-000000?style=for-the-badge">
+</p>
 
 # Support
 
