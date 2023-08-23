@@ -24,11 +24,6 @@
 ---
 
 <p align="center">
-    📫 <strong>How to reach me:</strong> chris@blackhatethicalhacking.com
-</p>
-
-
-<p align="center">
     <img src="https://img.icons8.com/material-rounded/24/000000/star--v1.png"/> <strong>A special thanks to all the star gazers, we see you!</strong> <img src="https://img.icons8.com/material-rounded/24/000000/star--v1.png"/>
 </p>
 
