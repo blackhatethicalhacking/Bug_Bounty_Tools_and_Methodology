@@ -457,8 +457,16 @@ You can watch us live on Twitch but also get access to over 100 Episodes perform
   <img src="https://img.shields.io/badge/-blackhatethicalhacking.com%20%2F%2F%202023%20%2F%2F%20All%20Rights%20Reserved-000000?style=for-the-badge">
 </p>
 
-# Support
+<h2 align="center">
+  <a href="https://store.blackhatethicalhacking.com/" target="_blank">BHEH Official Merch</a>
+</h2>
 
-If you would like to support us, you can always buy us coffee(s)! :blush:
+<p align="center">
+Introducing our Merch Store, designed for the Offensive Security community. Explore a curated collection of apparel and drinkware, perfect for both professionals and enthusiasts. Our selection includes premium t-shirts, hoodies, and mugs, each featuring bold hacking-themed slogans and graphics that embody the spirit of red teaming and offensive security. 
+Hack with style and showcase your dedication to hacker culture with gear that’s as dynamic and resilient as you are. 😊
+</p>
 
-<a href="https://www.buymeacoffee.com/bheh" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+<p align="center">
+
+<img src="https://github.com/blackhatethicalhacking/blackhatethicalhacking/blob/main/Merch_Promo.gif" width="540px" height="540">
+  </p>
