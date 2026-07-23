@@ -1,7 +1,7 @@
 # Bug Bounty Methodology & Tools
 
 <p align="center">
-<a href="https://www.blackhatethicalhacking.com"><img src="https://www.blackhatethicalhacking.com/wp-content/uploads/2022/06/BHEH_logo.png" width="300px" alt="BHEH"></a>
+<a href="https://www.blackhatethicalhacking.com"><img src="https://blackhatethicalhacking.com/assets/images/Logo_Complete.png" width="300px" alt="BHEH"></a>
 </p>
 
 <h2 align="center"><u>Black Hat Ethical Hacking</u>
